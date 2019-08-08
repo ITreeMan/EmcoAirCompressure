@@ -1,0 +1,155 @@
+<!-- <div class="container">
+    <div class="mt-5">
+        <mat-grid-list [cols]="breakpoint" rowHeight="2:2" [gutterSize]="'10px'">
+
+            <mat-grid-tile [style.backgroundColor]="'#'" href="#performance" role="button" class="btn btn-primary"
+                data-toggle="modal">
+                <div class="row">
+                    <div class="col-12 pt-4">
+                        <img src="assets/img-app/rotaty-btn.png" width="50%">
+                    </div>
+
+                    <div class="col-12 pt-4">
+                        <span>Performance</span>
+                    </div>
+                </div>
+
+            </mat-grid-tile>
+
+            <mat-grid-tile>2</mat-grid-tile>
+            <mat-grid-tile>3</mat-grid-tile>
+            <mat-grid-tile>4</mat-grid-tile>
+            <mat-grid-tile>5</mat-grid-tile>
+            <mat-grid-tile>6</mat-grid-tile>
+        </mat-grid-list>
+    </div>
+</div> -->
+
+
+
+<!--==============================
+              header
+=================================-->
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 ">
+                    <h1>
+                        <a>
+                            <img src="assets/img-app/logo.png" alt="Logo alt">
+                        </a>
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <section id="stuck_container">
+            <!--==============================
+                Stuck menu
+    =================================-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 ">
+                        <div class="navigation ">
+                            <nav>
+                                <br>
+                            </nav>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="page1_header ">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-5  ">
+
+                        <div class="col-12 text-center ">
+
+                            <a class="banner " data-toggle="modal" data-target="#performance" role="button">
+                                <div class="maxheight mb-3 mt-3">
+                                    <div class="fa fa-line-chart mb-3"></div>Performance
+                                </div>
+                            </a>
+
+
+                            <a class="banner " role="button">
+                                <div class="maxheight mb-3 mt-3">
+                                    <div class="fa fa-money mb-3"></div>Finacnce
+                                </div>
+                            </a>
+
+                        </div>
+
+                        <div class="col-12">
+                            <a class="banner2 " role="button">
+                                <div class="maxheight1 mb-3 mt-3">
+                                    <div class="fa fa-cog mb-3"></div>Maintenance
+                                </div>
+                            </a>
+
+                            <a class="banner2 " role="button">
+                                <div class="maxheight1 mb-3 mt-3">
+                                    <div class="fa fa-briefcase mb-3"></div>Management
+                                </div>
+                            </a>
+
+
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class="col-5  grid_5 ml-0 p-2">
+                        <div class="col-12 m-0 p-0">
+                            <h2>
+                                <font size="40"> Emco </font> <br>
+                                <font size="40">Air</font> <br>
+                                <font size="40"> Compressure</font>
+                            </h2>
+                        </div>
+                        <div class="col-12 mt-2 pt-5 pl-0">
+                            <font size="6"> We help you calculate for your business.</font>
+                        </div>
+
+                    </div>
+
+                    <div class="col-1  grid_5 ml-2">
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </header>
+</body>
+
+
+
+<div class="modal" id="performance" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="false">
+    <div class="modal-dialog modal-full mt-5 pt-5 pl-3 pr-3" role="document">
+
+        <div class="modal-content">
+            <!-- <div class="modal-header">
+                    <h5 class="modal-title">Performance</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div> -->
+            <div class="modal-body p-0 " id="result">
+                <app-performance></app-performance>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>

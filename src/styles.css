@@ -1,0 +1,156 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "./app/my-theme.css";
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:600);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:700);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300italic);
+@import url(//fonts.googleapis.com/css?family=Roboto+Condensed:400);
+@import url(//fonts.googleapis.com/css?family=Roboto+Condensed:300);
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: url(assets/img-app/slide.jpg) no-repeat center center fixed; 
+
+}
+
+/*header*/
+
+header , body {
+  /* color: #e6e5e5;
+  display: block;
+  position: relative;
+  z-index: 999;
+  padding: 18px 0 77px;
+  height: 100%;
+  background: url(assets/img-app/slide.jpg) center 0 no-repeat;
+  background-size: cover; */
+
+  color: #e6e5e5;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header .rel {
+  z-index: 999;
+}
+
+header h1 {
+  text-align: center;
+  z-index: 999;
+  float: left;
+  margin-bottom: 10px;
+}
+
+header h1 a {
+  display: block;
+  overflow: hidden;
+  font-size: 0;
+  line-height: 0;
+  -webkit-transition: 0s ease;
+  transition: 0s ease;
+}
+
+header h1.stuck_head {
+  opacity: 0;
+}
+
+.page1_header {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 36px;
+  padding-top: 13px;
+}
+
+.page1_header .banner {
+  background-color: #088389;
+  color: #ffffff;
+  display: block;
+  width: 50%;
+  text-align: center;
+  float: left;
+  font-size: 18px;
+  padding: 20px 0 14px;
+}
+
+.page1_header .banner .fa {
+  margin-bottom: 27px;
+  display: block;
+  font-size: 72px;
+  line-height: 48px;
+}
+
+.page1_header .banner:first-child+.banner {
+  background-color: #00b1ba;
+}
+
+.page1_header .banner:first-child+.banner+.banner {
+  background-color: #00b1ba;
+}
+
+.page1_header .banner+.banner+.banner {
+  padding-top: 63px;
+  padding-bottom: 13px;
+}
+
+.page1_header .banner.maxheight1 .fa {
+  margin-bottom: 26px;
+}
+
+.page1_header .banner:hover {
+  background-color: #000000 !important;
+}
+
+.page1_header .banner2 {
+  background-color: #00b1ba;
+  color: #ffffff;
+  display: block;
+  width: 50%;
+  text-align: center;
+  float: left;
+  font-size: 18px;
+  padding: 20px 0 14px;
+}
+
+.page1_header .banner2 .fa {
+  margin-bottom: 27px;
+  display: block;
+  font-size: 72px;
+  line-height: 48px;
+}
+
+.page1_header .banner2:first-child+.banner2 {
+  background-color: #088389;
+}
+
+.page1_header .banner2:first-child+.banner2+.banner2 {
+  background-color: #088389;
+}
+
+.page1_header .banner2+.banner2+.banner2 {
+  padding-top: 63px;
+  padding-bottom: 13px;
+}
+
+.page1_header .banner2.maxheight1 .fa {
+  margin-bottom: 26px;
+}
+
+.page1_header .banner2:hover {
+  background-color: #000000 !important;
+}
+
+footer {
+  border-top: 1.5px solid white;
+  background-color: #088389;
+  color: white;
+  padding: 10px;
+}

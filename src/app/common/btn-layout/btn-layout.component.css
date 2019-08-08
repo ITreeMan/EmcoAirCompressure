@@ -1,0 +1,16 @@
+mat-grid-tile {
+  background: lightblue;
+}
+
+.modal-full {
+  min-width: fit-content;
+  /* margin: 0; */
+}
+
+.modal-full .modal-content {
+  min-height: auto;
+}
+
+.modal , .modal-content {
+  overflow: hidden;
+}

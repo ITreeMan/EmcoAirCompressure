@@ -1,0 +1,58 @@
+<div class="example-container" [class.example-is-mobile]="mobileQuery.matches">
+
+  <!-- <mat-toolbar  class="example-toolbar" style="background: #314a5e">
+    <button mat-icon-button (click)="snav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h1 class="example-app-name text-light" >EAC ( Emco Air Compressure )</h1>
+  </mat-toolbar> -->
+
+  <mat-sidenav-container class="example-sidenav-container" >
+
+    <!-- <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
+      fixedTopGap="56">
+      <mat-nav-list style="display:block;width:150px">
+        <a mat-list-item routerLink=".">Home</a>
+      </mat-nav-list>
+    </mat-sidenav> -->
+
+    <mat-sidenav-content class="m-0 p-0 " >
+      <!-- <p>content</p> -->
+      <app-btn-layout [hidden]="!checkDevice"></app-btn-layout>
+      <app-btn-layout-mobile [hidden]="checkDevice"></app-btn-layout-mobile>
+    </mat-sidenav-content>
+
+
+  </mat-sidenav-container>
+
+
+  <!-- <mat-tab-group mat-align-tabs="center" >
+
+    <mat-tab label="First" >Content 1</mat-tab>
+    <mat-tab label="Second">Content 2</mat-tab>
+    <mat-tab label="Third">Content 3</mat-tab>
+
+  </mat-tab-group> -->
+
+
+  <!-- <footer class="container-fluid text-center">
+      <p>Footer Text</p>
+    </footer> -->
+
+
+  <!-- Footer -->
+  <footer class="page-footer font-small blue" [hidden]="!checkDevice">
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 Copyright V3:
+      <a href="https://itreeman.github.io/" class="text-light"> ITreeMan</a>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
+
+
+
+  <router-outlet></router-outlet>
+</div>
