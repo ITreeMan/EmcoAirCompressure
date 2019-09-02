@@ -20,6 +20,12 @@ export class PerformanceComponent implements OnInit {
 
   public KW =1 ;
   public FAD =1 ;
+  public VT;
+  public VP;
+  public Time;
+  public P1;
+  public P2;
+
 
   public canvasWidth = 300
   public needleValue = 50
