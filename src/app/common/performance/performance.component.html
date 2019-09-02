@@ -8,17 +8,49 @@
                 </div>
 
                 <div class="col-10 col-lg-6 mt-5">
+                    
                     <div class="form-group row">
-                        <label for="example-text-input" class="col-5 col-form-label">Power (KW)</label>
-                        <div class="col-7">
-                            <input class="form-control" type="number" [(ngModel)]="KW">
+                        <label for="example-text-input" class="col-6 col-form-label">Tank volume (l)</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" [(ngModel)]="VT">
                         </div>
                     </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-6 col-form-label">Pipe volume (l)</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" [(ngModel)]="VP">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-6 col-form-label">Time (s)</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" [(ngModel)]="Time">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-6 col-form-label">pressure one (bar)</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" [(ngModel)]="P1">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-6 col-form-label">pressure two (bar)</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" [(ngModel)]="P2">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group row" [hidden] = "true">
+                            <label for="example-text-input" class="col-6 col-form-label">FAD</label>
+                            <div class="col-6">
+                                <input class="form-control" type="number" [value]="((P2-P1)*(VP+VT))/(1.013*Time)" [(ngModel)]="FAD" >
+                            </div>
+                        </div>
 
                     <div class="form-group row">
-                        <label for="example-search-input" class="col-5 col-form-label">FAD (l/s)</label>
-                        <div class="col-7">
-                            <input class="form-control" type="number" min="0.1" [(ngModel)]="FAD">
+                        <label for="example-search-input" class="col-6 col-form-label">Power (KW)</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" min="0.1" [(ngModel)]="KW">
                         </div>
                     </div>
                 </div>
@@ -48,22 +80,52 @@
                 </div>
 
                 <div class="col-10 col-lg-6 mt-5">
-
-                    <div class="form-group row">
-                        <label for="example-text-input" class="col-5 col-form-label">Power (KW)</label>
-                        <div class="col-7">
-                            <input class="form-control" type="number" [(ngModel)]="KW">
+                    
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-6 col-form-label">Tank volume (l)</label>
+                            <div class="col-6">
+                                <input class="form-control" type="number" [(ngModel)]="VT">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-6 col-form-label">Pipe volume (l)</label>
+                            <div class="col-6">
+                                <input class="form-control" type="number" [(ngModel)]="VP">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-6 col-form-label">Time (s)</label>
+                            <div class="col-6">
+                                <input class="form-control" type="number" [(ngModel)]="Time">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-6 col-form-label">pressure one (bar)</label>
+                            <div class="col-6">
+                                <input class="form-control" type="number" [(ngModel)]="P1">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-6 col-form-label">pressure two (bar)</label>
+                            <div class="col-6">
+                                <input class="form-control" type="number" [(ngModel)]="P2">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row" [hidden] = "true">
+                                <label for="example-text-input" class="col-6 col-form-label">FAD</label>
+                                <div class="col-6">
+                                    <input class="form-control" type="number" [value]="((P2-P1)*(VP+VT))/(1.013*Time)" [(ngModel)]="FAD" >
+                                </div>
+                            </div>
+    
+                        <div class="form-group row">
+                            <label for="example-search-input" class="col-6 col-form-label">Power (KW)</label>
+                            <div class="col-6">
+                                <input class="form-control" type="number" min="0.1" [(ngModel)]="KW">
+                            </div>
                         </div>
                     </div>
-
-                    <div class="form-group row">
-                        <label for="example-search-input" class="col-5 col-form-label">FAD (l/s)</label>
-                        <div class="col-7">
-                            <input class="form-control" type="number" min="0.1" [(ngModel)]="FAD">
-                        </div>
-                    </div>
-
-                </div>
 
                 <div class="col-1 col-lg-3 mt-5">
                 </div>
@@ -89,20 +151,52 @@
                 </div>
 
                 <div class="col-10 col-lg-6 mt-5">
-                    <div class="form-group row">
-                        <label for="example-text-input" class="col-5 col-form-label">Power (KW)</label>
-                        <div class="col-7">
-                            <input class="form-control" type="number" [(ngModel)]="KW">
+                    
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-6 col-form-label">Tank volume (l)</label>
+                            <div class="col-6">
+                                <input class="form-control" type="number" [(ngModel)]="VT">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-6 col-form-label">Pipe volume (l)</label>
+                            <div class="col-6">
+                                <input class="form-control" type="number" [(ngModel)]="VP">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-6 col-form-label">Time (s)</label>
+                            <div class="col-6">
+                                <input class="form-control" type="number" [(ngModel)]="Time">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-6 col-form-label">pressure one (bar)</label>
+                            <div class="col-6">
+                                <input class="form-control" type="number" [(ngModel)]="P1">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-6 col-form-label">pressure two (bar)</label>
+                            <div class="col-6">
+                                <input class="form-control" type="number" [(ngModel)]="P2">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group row" [hidden] = "true">
+                                <label for="example-text-input" class="col-6 col-form-label">FAD</label>
+                                <div class="col-6">
+                                    <input class="form-control" type="number" [value]="((P2-P1)*(VP+VT))/(1.013*Time)" [(ngModel)]="FAD" >
+                                </div>
+                            </div>
+    
+                        <div class="form-group row">
+                            <label for="example-search-input" class="col-6 col-form-label">Power (KW)</label>
+                            <div class="col-6">
+                                <input class="form-control" type="number" min="0.1" [(ngModel)]="KW">
+                            </div>
                         </div>
                     </div>
-
-                    <div class="form-group row">
-                        <label for="example-search-input" class="col-5 col-form-label">FAD (l/s)</label>
-                        <div class="col-7">
-                            <input class="form-control" type="number" min="0.1" [(ngModel)]="FAD">
-                        </div>
-                    </div>
-                </div>
 
                 <div class="col-1 col-lg-3 mt-5">
                 </div>
