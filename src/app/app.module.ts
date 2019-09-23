@@ -25,6 +25,10 @@ import { BtnLayoutMobileComponent } from './common/btn-layout-mobile/btn-layout-
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { VolumeTankComponent } from './common/volume-tank/volume-tank.component';
+import { PressureDropComponent } from './common/pressure-drop/pressure-drop.component';
+import { FADLeakComponent } from './common/fad-leak/fad-leak.component';
+import { TempReductComponent } from './common/temp-reduct/temp-reduct.component';
+import { PressureReductComponent } from './common/pressure-reduct/pressure-reduct.component';
 
 
 
@@ -37,6 +41,10 @@ import { VolumeTankComponent } from './common/volume-tank/volume-tank.component'
     PerformanceComponent,
     BtnLayoutMobileComponent,
     VolumeTankComponent,
+    PressureDropComponent,
+    FADLeakComponent,
+    TempReductComponent,
+    PressureReductComponent,
   ],
   imports: [
     BrowserModule,

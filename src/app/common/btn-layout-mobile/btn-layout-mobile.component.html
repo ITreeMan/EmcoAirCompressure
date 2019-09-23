@@ -44,7 +44,7 @@
                                 </div>
                             </mat-grid-tile>
 
-                            <mat-grid-tile class="btn-mobile-dark text-center" role="button">
+                            <mat-grid-tile class="btn-mobile-dark text-center" data-toggle="modal" data-target="#volume-tank-mobile" role="button">
                                 <div class="container" style="color: white;">
                                     <div class="row ">
                                         <div class="col-12">
@@ -57,7 +57,7 @@
                                 </div>
                             </mat-grid-tile>
 
-                            <mat-grid-tile class="btn-mobile-dark text-center" role="button">
+                            <mat-grid-tile class="btn-mobile-dark text-center" data-toggle="modal" data-target="#pressure-drop-mobile" role="button">
                                 <div class="container" style="color: white;">
                                     <div class="row">
                                         <div class="col-12">
@@ -70,7 +70,7 @@
                                 </div>
                             </mat-grid-tile>
 
-                            <mat-grid-tile class="btn-mobile-light text-center" role="button">
+                            <mat-grid-tile class="btn-mobile-light text-center" data-toggle="modal" data-target="#fad-leak-mobile" role="button">
                                 <div class="container" style="color: white;">
                                     <div class="row">
                                         <div class="col-12">
@@ -84,7 +84,7 @@
                             </mat-grid-tile>
 
 
-                            <mat-grid-tile class="btn-mobile-light text-center " >
+                            <mat-grid-tile class="btn-mobile-light text-center " data-toggle="modal" data-target="#temp-reduct-mobile" role="button">
                             <div class="container" style="color: white;">
                                 <div class="row">
                                     <div class="col-12">
@@ -97,7 +97,7 @@
                             </div>
                         </mat-grid-tile>
 
-                        <mat-grid-tile class="btn-mobile-dark text-center" role="button">
+                        <mat-grid-tile class="btn-mobile-dark text-center" data-toggle="modal" data-target="#pressure-reduct-mobile" role="button">
                             <div class="container" style="color: white;">
                                 <div class="row ">
                                     <div class="col-12">
@@ -143,6 +143,88 @@
                 <div> <i class="fa fa-square" style="color:rgb(61,204,91)"></i>  ดีมาก</div>
                 <div> <i class="fa fa-square" style="color:rgb(239,214,19)"></i>  มาตรฐาน</div>
                 <div> <i class="fa fa-square" style="color:rgb(255,84,84)"></i>  แย่</div>
+                <button type="button" class="btn btn-info" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- volume-tank-mobile -->
+<div class="modal" id="volume-tank-mobile" tabindex="-1" role="dialog" aria-labelledby="modalInsertAgression"
+    aria-hidden="true" data-backdrop="false">
+    <div class="modal-dialog modal-full mt-3 pt-3 pl-3 pr-3" role="document">
+
+        <div class="modal-content">
+            <app-volume-tank></app-volume-tank>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- pressure-drop-mobile -->
+<div class="modal" id="pressure-drop-mobile" tabindex="-1" role="dialog" aria-labelledby="modalInsertAgression"
+    aria-hidden="true" data-backdrop="false">
+    <div class="modal-dialog modal-full mt-3 pt-3 pl-3 pr-3" role="document">
+
+        <div class="modal-content">
+            <app-pressure-drop></app-pressure-drop>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- fad-leak-mobile -->
+<div class="modal" id="fad-leak-mobile" tabindex="-1" role="dialog" aria-labelledby="modalInsertAgression"
+    aria-hidden="true" data-backdrop="false">
+    <div class="modal-dialog modal-full mt-3 pt-3 pl-3 pr-3" role="document">
+
+        <div class="modal-content">
+            <app-fad-leak></app-fad-leak>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- temp-reduct-mobile -->
+<div class="modal" id="temp-reduct-mobile" tabindex="-1" role="dialog" aria-labelledby="modalInsertAgression"
+    aria-hidden="true" data-backdrop="false">
+    <div class="modal-dialog modal-full mt-3 pt-3 pl-3 pr-3" role="document">
+
+        <div class="modal-content">
+            <app-temp-reduct></app-temp-reduct>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-info" data-dismiss="modal">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- pressure-reduct-mobile -->
+<div class="modal" id="pressure-reduct-mobile" tabindex="-1" role="dialog" aria-labelledby="modalInsertAgression"
+    aria-hidden="true" data-backdrop="false">
+    <div class="modal-dialog modal-full mt-3 pt-3 pl-3 pr-3" role="document">
+
+        <div class="modal-content">
+            <app-pressure-reduct></app-pressure-reduct>
+
+            <div class="modal-footer">
                 <button type="button" class="btn btn-info" data-dismiss="modal">OK</button>
             </div>
         </div>
