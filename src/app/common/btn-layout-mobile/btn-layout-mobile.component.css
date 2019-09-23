@@ -17,6 +17,8 @@
 .bg-sidenav {
     /* background-image: url("assets/img-app/slide.jpg"); */
     width: 30%;
+    height: 100%;
+    min-height: 100vh;
     background-image: url('../../../assets/img-app/test.jpg');
 }
 

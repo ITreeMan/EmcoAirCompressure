@@ -1,6 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~font-awesome/css/font-awesome.css";@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @import "./app/my-theme.css";
 @import url(//fonts.googleapis.com/css?family=Open+Sans:400);
 @import url(//fonts.googleapis.com/css?family=Open+Sans:300);
@@ -81,7 +80,7 @@ header h1.stuck_head {
   padding: 20px 0 14px;
 }
 
-.page1_header .banner .fa {
+.page1_header .banner .fas {
   margin-bottom: 27px;
   display: block;
   font-size: 72px;
@@ -101,7 +100,7 @@ header h1.stuck_head {
   padding-bottom: 13px;
 }
 
-.page1_header .banner.maxheight1 .fa {
+.page1_header .banner.maxheight1 .fas {
   margin-bottom: 26px;
 }
 
@@ -120,7 +119,7 @@ header h1.stuck_head {
   padding: 20px 0 14px;
 }
 
-.page1_header .banner2 .fa {
+.page1_header .banner2 .fas {
   margin-bottom: 27px;
   display: block;
   font-size: 72px;
@@ -140,7 +139,7 @@ header h1.stuck_head {
   padding-bottom: 13px;
 }
 
-.page1_header .banner2.maxheight1 .fa {
+.page1_header .banner2.maxheight1 .fas {
   margin-bottom: 26px;
 }
 

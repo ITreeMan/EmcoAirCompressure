@@ -1,12 +1,11 @@
 .example-container {
   display: flex;
 
-  -webkit-box-ordinal-group: 2;   /* 2009 - Chrome, Safari , iOS Safari */
-    -moz-box-ordinal-group: 2;      /* 2009 - Firefox */
-    -ms-flex-order: 2;              /* early 2012 - IE 10 */
-    -webkit-order: 2;               /* 2012 - Chrome */
-    order: 2;     
-    
+  -webkit-flex-wrap: wrap;  
+  flex-wrap: wrap;
+
+
+
   flex-direction: column;
   position: absolute;
   top: 0;
@@ -16,8 +15,8 @@
 
 
 
-
-  
+  min-height:100vh;
+  height: 100vh;
 }
 
 .example-is-mobile .example-toolbar {

@@ -24,6 +24,10 @@ import { PerformanceComponent } from './common/performance/performance.component
 import { BtnLayoutMobileComponent } from './common/btn-layout-mobile/btn-layout-mobile.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { VolumeTankComponent } from './common/volume-tank/volume-tank.component';
+
+
+
 
 @NgModule({
   declarations: [
@@ -32,6 +36,7 @@ import { environment } from '../environments/environment';
     BtnLayoutComponent,
     PerformanceComponent,
     BtnLayoutMobileComponent,
+    VolumeTankComponent,
   ],
   imports: [
     BrowserModule,

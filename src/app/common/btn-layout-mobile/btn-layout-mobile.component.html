@@ -1,10 +1,11 @@
-<mat-drawer-container class="example-container ">
+<mat-drawer-container class="min-vh-100 h-100">
     <mat-drawer mode="side" opened class="bg-sidenav">
         <!-- side bar -->
+        <!-- <img [src]="assets/bg.png"> -->
     </mat-drawer>
 
 
-    <mat-drawer-content class="set-flex  w-100">
+    <mat-drawer-content class="set-flex  w-100 ">
         <div class="container">
             <div class="row">
 
@@ -34,10 +35,10 @@
                                 <div class="container" style="color: white;">
                                     <div class="row">
                                         <div class="col-12">
-                                            <i class="fa fa-line-chart" style="font-size: 19vw;"></i>
+                                            <i class="fas fa-wrench" style="font-size: 19vw;"></i>
                                         </div>
                                         <div class="col-12" style="font-size: 4vw;">
-                                            Performance
+                                            kW/FAD
                                         </div>
                                     </div>
                                 </div>
@@ -47,10 +48,10 @@
                                 <div class="container" style="color: white;">
                                     <div class="row ">
                                         <div class="col-12">
-                                            <i class="fa fa-money" style="font-size: 19vw;"></i>
+                                            <i class="fas fa-spray-can" style="font-size: 19vw;"></i>
                                         </div>
                                         <div class="col-12 " style="font-size: 4vw;">
-                                            Finacnce
+                                            Volume Tank
                                         </div>
                                     </div>
                                 </div>
@@ -60,10 +61,10 @@
                                 <div class="container" style="color: white;">
                                     <div class="row">
                                         <div class="col-12">
-                                            <i class="fa fa-cog" style="font-size: 19vw;"></i>
+                                            <i class="fas fa-fill-drip" style="font-size: 19vw;"></i>
                                         </div>
                                         <div class="col-12 text-center" style="font-size: 4vw;">
-                                            Maintenance
+                                            Pressure drop
                                         </div>
                                     </div>
                                 </div>
@@ -73,14 +74,41 @@
                                 <div class="container" style="color: white;">
                                     <div class="row">
                                         <div class="col-12">
-                                            <i class="fa fa-briefcase" style="font-size: 19vw;"></i>
+                                            <i class="fas fa-wind" style="font-size: 19vw;"></i>
                                         </div>
                                         <div class="col-12" style="font-size: 4vw;">
-                                            Management
+                                            FAD leak
                                         </div>
                                     </div>
                                 </div>
                             </mat-grid-tile>
+
+
+                            <mat-grid-tile class="btn-mobile-light text-center " >
+                            <div class="container" style="color: white;">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <i class="fas fa-temperature-low" style="font-size: 19vw;"></i>
+                                    </div>
+                                    <div class="col-12" style="font-size: 4vw;">
+                                        Temp Reduction
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-grid-tile>
+
+                        <mat-grid-tile class="btn-mobile-dark text-center" role="button">
+                            <div class="container" style="color: white;">
+                                <div class="row ">
+                                    <div class="col-12">
+                                        <i class="fas fa-sort-amount-down-alt" style="font-size: 19vw;"></i>
+                                    </div>
+                                    <div class="col-12 " style="font-size: 4vw;">
+                                        Pressure Reduction
+                                    </div>
+                                </div>
+                            </div>
+                        </mat-grid-tile>
 
                         </mat-grid-list>
                     </div>
@@ -112,6 +140,9 @@
             <app-performance></app-performance>
 
             <div class="modal-footer">
+                <div> <i class="fa fa-square" style="color:rgb(61,204,91)"></i>  ดีมาก</div>
+                <div> <i class="fa fa-square" style="color:rgb(239,214,19)"></i>  มาตรฐาน</div>
+                <div> <i class="fa fa-square" style="color:rgb(255,84,84)"></i>  แย่</div>
                 <button type="button" class="btn btn-info" data-dismiss="modal">OK</button>
             </div>
         </div>

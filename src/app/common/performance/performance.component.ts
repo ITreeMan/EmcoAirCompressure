@@ -19,13 +19,13 @@ export class PerformanceComponent implements OnInit {
   result:any;
 
   public KW =1 ;
-  public FAD =1 ;
-  public VT;
-  public VP;
-  public Time;
-  public P1;
-  public P2;
-
+  public VT=0;
+  public VP=0;
+  public Time=0;
+  public P1=0;
+  public P2=0;
+  public FAD  ;
+  public KWFAD  ;
 
   public canvasWidth = 300
   public needleValue = 50
@@ -60,8 +60,17 @@ export class PerformanceComponent implements OnInit {
     rangeLabel: ["0", "1"],
   }
 
+  // FAD = ((this.P2-this.P1)*(this.VP+this.VT))/(1.013*this.Time)
 
 
+
+  onSearchChange(): void {
+    this.FAD = (((this.P2-this.P1)*(this.VP+this.VT))/(1.013*this.Time)).toFixed(2)
+    this.KWFAD = (this.KW/this.FAD).toFixed(3)
+
+    }
+
+    
   constructor() { }
 
   ngOnInit() {
