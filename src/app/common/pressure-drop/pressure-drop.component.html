@@ -1,1 +1,51 @@
-<p>pressure-drop works!</p>
+<mat-tab-group mat-align-tabs="center" [selectedIndex]="0" [color]="'warn'" [backgroundColor]="'accent'">
+    <!-- การคำนวณหาความดันลดในท่อ -->
+    <mat-tab label="การคำนวณหาความดันลดในท่อ">
+
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-1 col-lg-3 mt-5">
+                </div>
+
+                <div class="col-10 col-lg-6 mt-5">
+                    <div class="form-group row">
+                        <label for="example-search-input" class="col-6 col-form-label">L (m)</label>
+                        <!-- แปลงเป็น m^3/min.*0.06 -->
+                        <div class="col-6">
+                            <input class="form-control" type="number" min="0.1" [(ngModel)]="L"
+                                (input)="onSearchChange()">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-6 col-form-label">FAD (l/s)</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" [(ngModel)]="FAD" (input)="onSearchChange()">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-6 col-form-label">P (bar)</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" [(ngModel)]="P" (input)="onSearchChange()">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-6 col-form-label">D (mm)</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" [(ngModel)]="D" (input)="onSearchChange()">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-6 col-form-label">Pressure drop (bar)</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" [(ngModel)]="deltaPressure" (input)="onSearchChange()">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </mat-tab>
+
+</mat-tab-group>

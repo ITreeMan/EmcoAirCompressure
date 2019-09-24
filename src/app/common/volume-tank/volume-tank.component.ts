@@ -7,9 +7,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VolumeTankComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit() {
   }
+
+
+
+
+  public FAD ;
+  public time ;
+  public pressure = 1.013
+  public usingPressure ;
+  public tankVolume ;
+
+  onSearchChange(){
+    this.tankVolume = ((this.time*this.FAD*this.pressure)/(this.usingPressure+this.pressure)).toFixed(3)
+  }
+
 
 }
