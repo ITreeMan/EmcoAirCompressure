@@ -12,4 +12,17 @@ export class FADLeakComponent implements OnInit {
   ngOnInit() {
   }
 
+  public FADL;
+
+  public timeOnload;
+  public timeUnload;
+  public FADComp;
+
+
+  onSearchChange() {
+    this.FADL = (((this.timeOnload) / (this.timeOnload + this.timeUnload)) * this.FADComp).toFixed(2)
+  }
+
+
+
 }

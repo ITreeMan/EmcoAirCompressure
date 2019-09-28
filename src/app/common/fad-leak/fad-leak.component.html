@@ -1,1 +1,45 @@
-<p>fad-leak works!</p>
+<mat-tab-group mat-align-tabs="center" [selectedIndex]="0" [color]="'warn'" [backgroundColor]="'accent'">
+    <!-- การคำนวณหาอัตราการรั่ว -->
+    <mat-tab label="การคำนวณหาอัตราการรั่ว">
+
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-1 col-lg-3 mt-5">
+                </div>
+
+                <div class="col-10 col-lg-6 mt-5">
+                    <div class="form-group row">
+                        <label for="example-search-input" class="col-6 col-form-label">time on load (s)</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" min="0.1" [(ngModel)]="timeOnload"
+                                (input)="onSearchChange()">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-6 col-form-label">time Unload (s)</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" [(ngModel)]="timeUnload"
+                                (input)="onSearchChange()">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-6 col-form-label">FAD Comp (l/s)</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" [(ngModel)]="FADComp" (input)="onSearchChange()">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="example-text-input" class="col-6 col-form-label">FAD Leak (l/s)</label>
+                        <div class="col-6">
+                            <input class="form-control" type="number" [(ngModel)]="FADL" (input)="onSearchChange()">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </mat-tab>
+
+</mat-tab-group>
