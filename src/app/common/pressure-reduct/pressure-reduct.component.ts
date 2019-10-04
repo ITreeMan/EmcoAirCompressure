@@ -12,4 +12,18 @@ export class PressureReductComponent implements OnInit {
   ngOnInit() {
   }
 
+  public FAD;
+  public T;
+  public P1;
+  public P2;
+  public kW ;
+
+
+  onSearchChange(){
+    this.kW = ((1.2054*(this.T+273.15))*(Math.pow((((this.P1+this.P2)*100)/(this.P1*100)),0.286)-1)*(this.FAD/1000)).toFixed(2)    
+  }
+
+
+
+
 }
