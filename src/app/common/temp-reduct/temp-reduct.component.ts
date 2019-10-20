@@ -15,14 +15,25 @@ export class TempReductComponent implements OnInit {
   public FADComp;
 
   public T1;
-  public P1;
+  public T2;
+  public PAir = 1.013;
   public P2;
-  public kW;
-  public Test;
+  public kW1;
+  public kW2;
+  public PowerSaving;
+  public TestBefore;
+  public TestAfter;
   
-  onSearchChange() {
-    this.Test = ((this.P2+this.P1)*100)/(this.P1*100)
-    this.kW = ((1.2054*(this.T1+273.15))*(Math.pow((this.Test),0.286)-1)*(this.FADComp/1000)).toFixed(2)
+  onSearchChangeBefore() {
+    this.TestBefore = ((this.P2+this.PAir)*100)/(this.PAir*100)
+    this.kW1 = ((1.2054*(this.T1+273.15))*(Math.pow((this.TestBefore),0.286)-1)*(this.FADComp/1000)).toFixed(2)
+    this.PowerSaving = (this.kW1-this.kW2).toFixed(3)
+  }
+
+  onSearchChangeAfter() {
+    this.TestAfter = ((this.P2+this.PAir)*100)/(this.PAir*100)
+    this.kW2 = ((1.2054*(this.T2+273.15))*(Math.pow((this.TestAfter),0.286)-1)*(this.FADComp/1000)).toFixed(2)
+    this.PowerSaving = (this.kW1-this.kW2).toFixed(3)
   }
 
   

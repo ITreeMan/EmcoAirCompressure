@@ -1,54 +1,73 @@
-<mat-tab-group mat-align-tabs="center" [selectedIndex]="0" [color]="'warn'" [backgroundColor]="'accent'">
-    <!--  การลดอุณหภูมิของอากาศทางเข้า -->
-    <mat-tab label=" การลดอุณหภูมิของอากาศทางเข้า">
+<mat-toolbar color="accent" style="height: 10% !important;">
+    <div class="container">
+        <p class="text-center m-0">
+            <font size="3"> การลดอุณหภูมิของอากาศทางเข้า</font>
+        </p>
+    </div>
+</mat-toolbar>
 
-        <div class="container">
-            <div class="row d-flex justify-content-center">
-                <div class="col-1 col-lg-3 mt-5">
+<div class="container">
+    <div class="row d-flex justify-content-center">
+
+        <div class="col-10 col-lg-6 mt-5">
+            <div class="form-group row">
+                <label for="example-text-input" class="col-6 col-form-label">FAD Comp (l/s)</label>
+                <div class="col-6">
+                    <input class="form-control" type="number" [(ngModel)]="FADComp" (input)="onSearchChangeBefore()"
+                        (input)="onSearchChangeAfter()">
                 </div>
-
-                <div class="col-10 col-lg-6 mt-5">
-                    <div class="form-group row">
-                        <label for="example-text-input" class="col-6 col-form-label">FAD Comp (l/s)</label>
-                        <div class="col-6">
-                            <input class="form-control" type="number" [(ngModel)]="FADComp" (input)="onSearchChange()">
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="example-search-input" class="col-6 col-form-label">T1 (C)</label>
-                        <div class="col-6">
-                            <input class="form-control" type="number" min="0.1" [(ngModel)]="T1"
-                                (input)="onSearchChange()">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="example-text-input" class="col-6 col-form-label">P1 (Bar)</label>
-                        <div class="col-6">
-                            <input class="form-control" type="number" [(ngModel)]="P1"
-                                (input)="onSearchChange()">
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                        <label for="example-text-input" class="col-6 col-form-label">P2 (Bar)</label>
-                        <div class="col-6">
-                            <input class="form-control" type="number" [(ngModel)]="P2" (input)="onSearchChange()">
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
-                            <label for="example-text-input" class="col-6 col-form-label">kW (kW)</label>
-                            <div class="col-6">
-                                <input class="form-control" type="number" [(ngModel)]="kW" (input)="onSearchChange()">
-                            </div>
-                        </div>
-
-                </div>
-
             </div>
+
+            <div class="form-group row">
+                <label for="example-search-input" class="col-6 col-form-label">Inlet Temperature Before (C)</label>
+                <div class="col-6">
+                    <input class="form-control" type="number" min="0.1" [(ngModel)]="T1"
+                        (input)="onSearchChangeBefore()">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="example-search-input" class="col-6 col-form-label">Inlet Temperature After (C)</label>
+                <div class="col-6">
+                    <input class="form-control" type="number" min="0.1" [(ngModel)]="T2"
+                        (input)="onSearchChangeAfter()">
+                </div>
+            </div>
+
+
+            <div class="form-group row">
+                <label for="example-text-input" class="col-6 col-form-label">Working Pressure (Bar)</label>
+                <div class="col-6">
+                    <input class="form-control" type="number" [(ngModel)]="P2" (input)="onSearchChangeBefore()"
+                        (input)="onSearchChangeAfter()">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="example-text-input" class="col-6 col-form-label">Power Before (kW)</label>
+                <div class="col-6">
+                    <input class="form-control" [disabled]="true" type="number" [(ngModel)]="kW1"
+                        (input)="onSearchChangeBefore()">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="example-text-input" class="col-6 col-form-label">Power After (kW)</label>
+                <div class="col-6">
+                    <input class="form-control" [disabled]="true" type="number" [(ngModel)]="kW2"
+                        (input)="onSearchChangeAfter()">
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label for="example-text-input" class="col-6 col-form-label">Power Saving (kW)</label>
+                <div class="col-6">
+                    <input class="form-control" [disabled]="true" type="number" [(ngModel)]="PowerSaving"
+                        (input)="onSearchChangeBefore()" (input)="onSearchChangeAfter()">
+                </div>
+            </div>
+
         </div>
 
-    </mat-tab>
-
-</mat-tab-group>
+    </div>
+</div>

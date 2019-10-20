@@ -23,16 +23,17 @@ export class PerformanceComponent implements OnInit {
   bad: any;
   result: any;
 
-  public KW = 1;
-  public VT = 0;
-  public VP = 0;
-  public Time = 0;
-  public P1 = 0;
-  public P2 = 0;
+  public KW ;
+  public VT ;
+  public VP ;
+  public Time ;
+  public P1 ;
+  public P2 ;
   public FAD;
   public KWFAD;
+  public textShow = "kW/FAD = ";
 
-  public canvasWidth = 300
+  public canvasWidth = 225
   public needleValue = 50
   public centralLabel = ''
   public name = ''
@@ -72,6 +73,7 @@ export class PerformanceComponent implements OnInit {
   onSearchChange(): void {
     this.FAD = (((this.P2 - this.P1) * (this.VP + this.VT)) / (1.013 * this.Time)).toFixed(2)
     this.KWFAD = (this.KW / this.FAD).toFixed(3)
+    this.textShow = "kW/FAD = " + this.KWFAD
 
   }
 
