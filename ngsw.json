@@ -1,0 +1,132 @@
+{
+  "configVersion": 1,
+  "timestamp": 1626254538117,
+  "index": "https://itreeman.github.io/EmcoAirCompressure/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://itreeman.github.io/EmcoAirCompressure/favicon.ico",
+        "https://itreeman.github.io/EmcoAirCompressure/index.html",
+        "https://itreeman.github.io/EmcoAirCompressure/main-es2015.21d248322bb9f978981b.js",
+        "https://itreeman.github.io/EmcoAirCompressure/main-es5.1a77fefab858330c1443.js",
+        "https://itreeman.github.io/EmcoAirCompressure/polyfills-es2015.5728f680576ca47e99fe.js",
+        "https://itreeman.github.io/EmcoAirCompressure/polyfills-es5.4e06eb653a3c8a2d581f.js",
+        "https://itreeman.github.io/EmcoAirCompressure/runtime-es2015.858f8dd898b75fe86926.js",
+        "https://itreeman.github.io/EmcoAirCompressure/runtime-es5.741402d1d47331ce975c.js",
+        "https://itreeman.github.io/EmcoAirCompressure/styles.8e1840bfabb159a96190.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "https://itreeman.github.io/EmcoAirCompressure/assets/bg.png",
+        "https://itreeman.github.io/EmcoAirCompressure/assets/icons/icon-128x128.png",
+        "https://itreeman.github.io/EmcoAirCompressure/assets/icons/icon-144x144.png",
+        "https://itreeman.github.io/EmcoAirCompressure/assets/icons/icon-152x152.png",
+        "https://itreeman.github.io/EmcoAirCompressure/assets/icons/icon-192x192.png",
+        "https://itreeman.github.io/EmcoAirCompressure/assets/icons/icon-384x384.png",
+        "https://itreeman.github.io/EmcoAirCompressure/assets/icons/icon-512x512.png",
+        "https://itreeman.github.io/EmcoAirCompressure/assets/icons/icon-72x72.png",
+        "https://itreeman.github.io/EmcoAirCompressure/assets/icons/icon-96x96.png",
+        "https://itreeman.github.io/EmcoAirCompressure/assets/icons/ios/icon-152x152.png",
+        "https://itreeman.github.io/EmcoAirCompressure/assets/icons/ios/icon-192x192.png",
+        "https://itreeman.github.io/EmcoAirCompressure/assets/icons/ios/icon-512x512.png",
+        "https://itreeman.github.io/EmcoAirCompressure/assets/img-app/logo.png",
+        "https://itreeman.github.io/EmcoAirCompressure/assets/img-app/rotaty-btn.png",
+        "https://itreeman.github.io/EmcoAirCompressure/assets/img-app/slide.jpg",
+        "https://itreeman.github.io/EmcoAirCompressure/assets/img-app/test.jpg",
+        "https://itreeman.github.io/EmcoAirCompressure/assets/img-app/test1.jpg",
+        "https://itreeman.github.io/EmcoAirCompressure/fontawesome-webfont.674f50d287a8c48dc19b.eot",
+        "https://itreeman.github.io/EmcoAirCompressure/fontawesome-webfont.912ec66d7572ff821749.svg",
+        "https://itreeman.github.io/EmcoAirCompressure/fontawesome-webfont.af7ae505a9eed503f8b8.woff2",
+        "https://itreeman.github.io/EmcoAirCompressure/fontawesome-webfont.b06871f281fee6b241d6.ttf",
+        "https://itreeman.github.io/EmcoAirCompressure/fontawesome-webfont.fee66e712a8a08eef580.woff",
+        "https://itreeman.github.io/EmcoAirCompressure/slide.9264138cc703cde0a057.jpg",
+        "https://itreeman.github.io/EmcoAirCompressure/test.319cb9b363cbb5c2bddc.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "api-freshness",
+      "patterns": [
+        "\\/timeline"
+      ],
+      "strategy": "freshness",
+      "maxSize": 300,
+      "maxAge": 31536000000,
+      "timeoutMs": 5000,
+      "version": 1
+    },
+    {
+      "name": "api-performance",
+      "patterns": [
+        "\\/favorites"
+      ],
+      "strategy": "performance",
+      "maxSize": 100,
+      "maxAge": 259200000,
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "https://itreeman.github.io/EmcoAirCompressure/assets/bg.png": "077f1d1926e8779c51622cf421538a266db003d4",
+    "https://itreeman.github.io/EmcoAirCompressure/assets/icons/icon-128x128.png": "6a4a1f7259d8493330acc7f497d4a3f84587b396",
+    "https://itreeman.github.io/EmcoAirCompressure/assets/icons/icon-144x144.png": "474a1e0e4cbb8c67eaf887f9fdbba5960b52cc14",
+    "https://itreeman.github.io/EmcoAirCompressure/assets/icons/icon-152x152.png": "fb4344739c36322cd6b3b5a1c005aceb6719be30",
+    "https://itreeman.github.io/EmcoAirCompressure/assets/icons/icon-192x192.png": "73a19bd48df8d33893f392e8f2c2fb248352e269",
+    "https://itreeman.github.io/EmcoAirCompressure/assets/icons/icon-384x384.png": "e5a919cfcb06bfa2dc23dadada3009b5a828b37a",
+    "https://itreeman.github.io/EmcoAirCompressure/assets/icons/icon-512x512.png": "6fa4fa0643be9b4dc98db7d91aad3bb2794c067d",
+    "https://itreeman.github.io/EmcoAirCompressure/assets/icons/icon-72x72.png": "4a4ad34e69a136cfc46e9b186bc068f6ba2507f1",
+    "https://itreeman.github.io/EmcoAirCompressure/assets/icons/icon-96x96.png": "8eeac7def5d164a89d1395eab7d3ec2a98fecf62",
+    "https://itreeman.github.io/EmcoAirCompressure/assets/icons/ios/icon-152x152.png": "eb7def3b363239a2b21c1a02509f9012753971ca",
+    "https://itreeman.github.io/EmcoAirCompressure/assets/icons/ios/icon-192x192.png": "faf0490f7375b48d211756846146ce3edeaf71e6",
+    "https://itreeman.github.io/EmcoAirCompressure/assets/icons/ios/icon-512x512.png": "e79caac7dd8337f0c98fd66656ce18e9b962e77b",
+    "https://itreeman.github.io/EmcoAirCompressure/assets/img-app/logo.png": "52e91427d846b72ab3b3aa70389cc4f10c6679f0",
+    "https://itreeman.github.io/EmcoAirCompressure/assets/img-app/rotaty-btn.png": "a9a987882dc0844a783280947a1993c862c98dc5",
+    "https://itreeman.github.io/EmcoAirCompressure/assets/img-app/slide.jpg": "de67f8499ba625014b41aa1dc043da195104a24f",
+    "https://itreeman.github.io/EmcoAirCompressure/assets/img-app/test.jpg": "f240a3563b414587056055c9466fac140e1feb72",
+    "https://itreeman.github.io/EmcoAirCompressure/assets/img-app/test1.jpg": "49f3b0f24d75b840026fb9726aee073931ff7773",
+    "https://itreeman.github.io/EmcoAirCompressure/favicon.ico": "263e0e912629428976649b81967c1522c0a63a59",
+    "https://itreeman.github.io/EmcoAirCompressure/fontawesome-webfont.674f50d287a8c48dc19b.eot": "d980c2ce873dc43af460d4d572d441304499f400",
+    "https://itreeman.github.io/EmcoAirCompressure/fontawesome-webfont.912ec66d7572ff821749.svg": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed",
+    "https://itreeman.github.io/EmcoAirCompressure/fontawesome-webfont.af7ae505a9eed503f8b8.woff2": "d6f48cba7d076fb6f2fd6ba993a75b9dc1ecbf0c",
+    "https://itreeman.github.io/EmcoAirCompressure/fontawesome-webfont.b06871f281fee6b241d6.ttf": "13b1eab65a983c7a73bc7997c479d66943f7c6cb",
+    "https://itreeman.github.io/EmcoAirCompressure/fontawesome-webfont.fee66e712a8a08eef580.woff": "28b782240b3e76db824e12c02754a9731a167527",
+    "https://itreeman.github.io/EmcoAirCompressure/index.html": "3ce7b52fb2d39a5c28c1a1672463740d2ca56bc0",
+    "https://itreeman.github.io/EmcoAirCompressure/main-es2015.21d248322bb9f978981b.js": "b8c5304e31d50b2032f094a60f4f5222cb32b8e8",
+    "https://itreeman.github.io/EmcoAirCompressure/main-es5.1a77fefab858330c1443.js": "17143103c2ac1fe5c6af3257bd43a99d96e9cc43",
+    "https://itreeman.github.io/EmcoAirCompressure/polyfills-es2015.5728f680576ca47e99fe.js": "77f974dd2b186031cfc4f4526d96db4efcd39353",
+    "https://itreeman.github.io/EmcoAirCompressure/polyfills-es5.4e06eb653a3c8a2d581f.js": "f84a71ef6c7a788b5fe701bf2405313d7766a66d",
+    "https://itreeman.github.io/EmcoAirCompressure/runtime-es2015.858f8dd898b75fe86926.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "https://itreeman.github.io/EmcoAirCompressure/runtime-es5.741402d1d47331ce975c.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
+    "https://itreeman.github.io/EmcoAirCompressure/slide.9264138cc703cde0a057.jpg": "de67f8499ba625014b41aa1dc043da195104a24f",
+    "https://itreeman.github.io/EmcoAirCompressure/styles.8e1840bfabb159a96190.css": "e79b8118938970fbdcdddf7fcc22c61adbd5b3e3",
+    "https://itreeman.github.io/EmcoAirCompressure/test.319cb9b363cbb5c2bddc.jpg": "f240a3563b414587056055c9466fac140e1feb72"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
